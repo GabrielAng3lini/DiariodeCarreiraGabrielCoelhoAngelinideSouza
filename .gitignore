@@ -1,0 +1,5 @@
+sysinfo
+syscpuinfo
+sysusageinfo
+*.out
+*.o
