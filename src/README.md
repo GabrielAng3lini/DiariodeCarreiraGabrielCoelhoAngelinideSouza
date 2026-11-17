@@ -1,6 +1,8 @@
+# Windows Teste de Conexão Automatizado (`monitor_ping`)
 Teste de conexão automático com checagem de ip
 ### O que ele faz?
-Cria um log na pasta temp que informa hora, ip e status de conexão a cada uma em uma hora e em caso de falha exibe na tela para o usuário um alerta,esse também a cada uma em uma hora o informando diretamente que houve falha de conexão.    
+Cria um log na pasta temp que informa hora, ip e status de conexão a cada uma em uma hora e em caso de falha exibe na tela para o usuário um alerta,esse também a cada uma em uma hora o informando diretamente que houve falha de conexão. 
+
 Requisitos:
 
     Sistema Operacional Windows 10 ou 11.
@@ -9,14 +11,19 @@ Requisitos:
 
 ### Como Executar
 1.Criar uma pasta no disco local com o nome temp;
+
 2.Levar o arquivo monitor_ping.ps1 para dentro da pasta temp;
+
 3.No Bloco de Notas criar um arquivo no formato .vbs contendo o codigo abaixo:
+
 ```vbscript
 Set WshShell = CreateObject("WScript.Shell")
 WshShell.Run "powershell.exe -ExecutionPolicy Bypass -File ""C:\temp\monitor_ping.ps1""", 0, False
 ```
-4.Mover esse arquivo .vbs para área de trabalho
-5.Duplo Clique no ícone na área de trabalho
+
+4.Mover esse arquivo .vbs para área de trabalho;
+
+5.Duplo Clique no ícone na área de trabalho.
 
 # Ubuntu Utilitários de Sistema (`sysinfo` & `sysusageinfo`)
 
